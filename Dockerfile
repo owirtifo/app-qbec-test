@@ -3,7 +3,7 @@
 FROM alpine:3.18
 RUN apk add --no-cache nginx
 
-COPY <<EOF /etc/nginx/http.d/default.conf
+COPY <<EOF default.conf
 hello
 EOF
 
