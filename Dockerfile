@@ -11,5 +11,7 @@ FROM alpine:3.18
 RUN apk add --no-cache nginx
 COPY --from=builder /site/public /var/www/app
 
+COPY default.conf /etc/nginx/http.d/default.conf
+
 ENTRYPOINT [ "/usr/sbin/nginx" ]
 CMD [ "-g", "daemon off;" ]
