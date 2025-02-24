@@ -1,3 +1,5 @@
+# syntax=docker/dockerfile:1
+
 FROM alpine:3.18
 RUN apk add --no-cache nginx
 
@@ -11,10 +13,7 @@ server {
         root /var/www/app;
 
         index index.html index.htm;
-
-        location / {
-               try_files \$uri \$uri/ =404;
-        }
+        
 }
 EOF
 
