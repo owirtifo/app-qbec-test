@@ -8,7 +8,7 @@ image:
   repository: owirtifo/ntlg-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "${GIT_LAST_TAG}"
+  tag: "v1.0.0"
 
 imagePullSecrets: []
 nameOverride: ""
