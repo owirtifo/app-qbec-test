@@ -11,6 +11,9 @@ spec:
       defaultNamespace: app
       server: https://kubernetes.default
   vars:
+    external:
+      - name: LAST_TAG
+        default: latest
     computed:
       - name: helmConfig
         code: |
